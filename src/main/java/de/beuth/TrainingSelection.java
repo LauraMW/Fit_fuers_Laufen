@@ -1,3 +1,5 @@
+package de.beuth;
+
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Section;
@@ -40,7 +42,7 @@ public class TrainingSelection {
 			switch (Zeit){
 				case "35":
 					par = new Paragraph("Durch diesen Trainingsplan, "
-							+ "k�nne Sie ihr Ziel von 5km in 35 Minunte erreichen ");
+							+ "können Sie ihr Ziel von 5km in 35 Minunte erreichen ");
 					addEmptyLine(par,2);
 					doc.add(par);
 					Plan.createTable5km35min(doc);

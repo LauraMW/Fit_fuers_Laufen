@@ -1,4 +1,5 @@
-import java.awt.BorderLayout;
+package de.beuth;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -10,7 +11,6 @@ import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -20,23 +20,9 @@ import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.FileOutputStream;
-import java.util.Date;
 
-import com.itextpdf.text.Anchor;
-import com.itextpdf.text.BadElementException;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chapter;
 import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.List;
-import com.itextpdf.text.ListItem;
 import com.itextpdf.text.PageSize;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.Section;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
 public class GUIWindow extends JFrame {
@@ -210,7 +196,7 @@ public class GUIWindow extends JFrame {
 		contentPane.add(comboZeit, gbc_comboBox);
 		
 		// label of dropbox Zeitaufwand 
-		JLabel lblZeitaufwand = new JLabel("Zeitaufwand pro Woche");
+		JLabel lblZeitaufwand = new JLabel("Trainingseinheiten pro Woche");
 		GridBagConstraints gbc_lblZeitaufwand = new GridBagConstraints();
 		gbc_lblZeitaufwand.insets = new Insets(0, 0, 5, 5);
 		gbc_lblZeitaufwand.anchor = GridBagConstraints.EAST;
@@ -255,12 +241,12 @@ public class GUIWindow extends JFrame {
 					try {
 						// create DoCument 
 	                    Document document = new Document(PageSize.A4.rotate());
-	                    // new object Ausgabe 
+	                    // new object de.beuth.Ausgabe
 	                    Ausgabe Test = new Ausgabe();
 	                    // location of document 
 	                    String FILE = "C:/Users/Default/Documents/Fit_F�rs_Laufen.pdf";
 	                    PdfWriter.getInstance(document, new FileOutputStream(FILE));
-	                    // create Ausgabe with methods 
+	                    // create de.beuth.Ausgabe with methods
 	                    document.open();
 	                    Test.addMetaData(document);
 	                    Test.addContent(document, Strecke, Zeit, Stand, Aufwand);
