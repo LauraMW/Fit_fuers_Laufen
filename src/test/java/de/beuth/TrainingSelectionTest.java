@@ -1,13 +1,12 @@
 package de.beuth;
-import static org.junit.Assert.assertEquals;
-
 import com.itextpdf.text.Chapter;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Section;
-import de.beuth.TrainingSelection;
-import org.junit.Test;
-import org.junit.Before; 
 import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
 
 /** 
 * de.beuth.TrainingSelection Tester.
@@ -20,13 +19,12 @@ public class TrainingSelectionTest {
     TrainingSelection trainingSelection;
    @Before
 public void before() throws Exception {
-
     trainingSelection = new TrainingSelection();
-
 } 
 
 @After
-public void after() throws Exception { 
+public void after() throws Exception {
+       trainingSelection = null;
 } 
 
 /** 
@@ -35,35 +33,36 @@ public void after() throws Exception {
 * 
 */ 
 @Test
-public void testSelectTraining() throws Exception { 
+public void testSelectTraining() throws Exception {
 //TODO: Test goes here...
-    Chapter testCh = new Chapter(new Paragraph("TestChPar"),1);
-    Section test = testCh.addSection("TestChSec");
-    String[]Zustand= {"untrainiert","grundausdauer","gut trainiert"};
-    for (int min= 20;min<=35;min=+5){
-        for (int i=0; i<Zustand.length;i++){
-            if ((min==35 && Zustand[i]=="grundausdauer")||(min==35 && Zustand[i]=="gut trainiert")||(min==30 && Zustand[i]=="gut trainiert")){
-                assertEquals(false, trainingSelection.selectTraining("5", Integer.toString(min), Zustand[i], "1", test));
-            }
-             else{
-                assertEquals(true, trainingSelection.selectTraining("5", Integer.toString(min), Zustand[i], "1", test));
-            }
-            }
-
-    }
-    for (int min= 40;min<=60;min=+5){
-        for (int i=0; i<Zustand.length;i++){
-            if ((min==60 && Zustand[i]=="grundausdauer")||(min==60 && Zustand[i]=="gut trainiert")||(min==50 && Zustand[i]=="gut trainiert")||(min==55 && Zustand[i]=="gut trainiert")){
-                assertEquals(false, trainingSelection.selectTraining("10", Integer.toString(min), Zustand[i], "1", test));
-
-            }
-            else{
-                assertEquals(true, trainingSelection.selectTraining("10", Integer.toString(min), Zustand[i], "1", test));
+    // Test just for the method selectTraining, because this method is the only one with a return value in the Class TrainingSelection
+    String[] level = {"untrainiert", "grundausdauer", "gut trainiert"};
+    Chapter ChaTest = new Chapter("Test",1);
+    Paragraph ParTest = new Paragraph("TestPar");
+    Section SecTest = ChaTest.addSection(ParTest);
+    boolean testCase = false;
+    // Test with 5km
+    for (int m = 20; m <= 35; m=m+5){
+        for (int i = 0; i < level.length ; i++){
+            testCase = trainingSelection.selectTraining("5", Integer.toString(m), level[i], "1", SecTest);
+            if ((i == 1 && m == 35) || (i == 2 && m == 35) || (i == 2 && m == 30)){
+                assertEquals(false, testCase );
+            }else{
+                assertEquals(true, testCase );
             }
         }
-
     }
-
+    // Test with 10km
+    for (int m = 40; m <= 60; m=m+5){
+        for (int i = 0; i < level.length ; i++){
+            testCase = trainingSelection.selectTraining("10", Integer.toString(m), level[i], "1", SecTest);
+            if ((i == 1 && m == 60) || (i == 2 && m == 60) || (i == 2 && m == 55) || (i == 2 && m == 50)){
+                assertEquals(false, testCase);
+            }else{
+                assertEquals(true, testCase);
+            }
+        }
+    }
 }
 
 /** 

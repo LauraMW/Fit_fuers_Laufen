@@ -235,8 +235,8 @@ public class GUIWindow extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (Strecke == "" || Zeit == "" || Stand == "" || Aufwand == ""){
-					JOptionPane.showMessageDialog(new JFrame(), "Alle Felder m�ssen eine Wert enthalt. "+ "\n"
-							+ "Bitte stellen Sie sicher, dass alle Dropdownfelder ausgef�llt sind.");
+					JOptionPane.showMessageDialog(new JFrame(), "Alle Felder müssen eine Wert enthalt. "+ "\n"
+							+ "Bitte stellen Sie sicher, dass alle Dropdownfelder ausgefällt sind.");
 				}else{
 					try {
 						// create DoCument 
@@ -244,7 +244,7 @@ public class GUIWindow extends JFrame {
 	                    // new object de.beuth.Ausgabe
 	                    Ausgabe Test = new Ausgabe();
 	                    // location of document 
-	                    String FILE = "C:/Users/Default/Documents/Fit_F�rs_Laufen.pdf";
+	                    String FILE = "C:/Users/Default/Documents/Fit_Fürs_Laufen.pdf";
 	                    PdfWriter.getInstance(document, new FileOutputStream(FILE));
 	                    // create de.beuth.Ausgabe with methods
 	                    document.open();

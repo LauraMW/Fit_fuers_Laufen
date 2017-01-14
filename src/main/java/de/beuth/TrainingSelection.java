@@ -54,7 +54,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable5km35min(doc);
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "5 km in 30 Minuten mit eine Grundausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -67,7 +67,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable5km35min(doc);
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "5 km in 25 Minuten mit eine Grundausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -86,7 +86,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable5km25min(doc);
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "5 km in 20 Minuten mit eine guten Ausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -102,14 +102,14 @@ public class TrainingSelection {
 			switch(Zeit){
 				case "60": 
 					par = new Paragraph("Durch diesen Trainingsplan, "
-							+ "k�nnen Sie ihr Ziel von 10km in 60 Minuten erreichen");
+							+ "können Sie ihr Ziel von 10km in 60 Minuten erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
 					Plan.createTable10km60min(doc);
 					break;					
 				case "55":
 					par = new Paragraph("Durch diesen Trainingsplan, "
-							+ "k�nnen Sie ihr Ziel von 10km in 55 Minuten erreichen");
+							+ "können Sie ihr Ziel von 10km in 55 Minuten erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
 					Plan.createTable10km55min(doc);
@@ -121,7 +121,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable10km60min(doc);
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "10 km in 50 Minuten mit eine Grundausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -134,7 +134,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable10km55min(doc);;
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "10 km in 45 Minuten mit eine Grundausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -153,7 +153,7 @@ public class TrainingSelection {
 					doc.add(par);
 					Plan.createTable10km50min(doc);;
 					addEmptyLine(par, 1);
-					par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+					par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 							+ "10 km in 40 Minuten mit eine guten Ausdauer erreichen");
 					addEmptyLine(par, 2);
 					doc.add(par);
@@ -172,14 +172,14 @@ public class TrainingSelection {
 			switch(Zeit){
 			case "30": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 5km in 30 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 5km in 30 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable5km30min(doc);
 				break;
 			case "25":
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 5km in 25 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 5km in 25 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable5km25min(doc);
@@ -191,7 +191,7 @@ public class TrainingSelection {
 				doc.add(par);
 				Plan.createTable5km30min(doc);;
 				addEmptyLine(par, 1);
-				par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+				par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 						+ "5 km in 20 Minuten mit eine Grundausdauer erreichen");
 				addEmptyLine(par, 2);
 				doc.add(par);
@@ -207,21 +207,21 @@ public class TrainingSelection {
 			switch(Zeit){
 			case "55": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nnen Sie ihr Ziel von 10km in 55 Minuten erreichen");
+						+ "können Sie ihr Ziel von 10km in 55 Minuten erreichen");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable10km50min(doc);
 				break;
 			case "50": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nnen Sie ihr Ziel von 10km in 50 Minuten erreichen");
+						+ "können Sie ihr Ziel von 10km in 50 Minuten erreichen");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable10km50min(doc);
 				break; 
 			case "45": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nnen Sie ihr Ziel von 10km in 45 Minuten erreichen");
+						+ "können Sie ihr Ziel von 10km in 45 Minuten erreichen");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable10km45min(doc);
@@ -233,7 +233,7 @@ public class TrainingSelection {
 				doc.add(par);
 				Plan.createTable10km50min(doc);;
 				addEmptyLine(par, 1);
-				par = new Paragraph("Durch diesen Trainingspaln k�nnen Sie ihr Ziel von "
+				par = new Paragraph("Durch diesen Trainingspaln können Sie ihr Ziel von "
 						+ "10 km in 40 Minuten mit eine guten Ausdauer erreichen");
 				addEmptyLine(par, 2);
 				doc.add(par);
@@ -252,14 +252,14 @@ public class TrainingSelection {
 			switch(Zeit){
 			case "25": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 5km in 25 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 5km in 25 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable5km20min(doc);
 				break;
 			case "20": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 5km in 20 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 5km in 20 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable5km20min(doc);
@@ -274,14 +274,14 @@ public class TrainingSelection {
 			switch(Zeit){
 			case "45": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 10km in 45 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 10km in 45 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable10km40min(doc);
 				break; 
 			case "40": 
 				par = new Paragraph("Durch diesen Trainingsplan, "
-						+ "k�nne Sie ihr Ziel von 10km in 40 Minunte erreichen ");
+						+ "könne Sie ihr Ziel von 10km in 40 Minunte erreichen ");
 				addEmptyLine(par, 2);
 				doc.add(par);
 				Plan.createTable10km40min(doc);
