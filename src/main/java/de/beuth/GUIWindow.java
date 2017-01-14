@@ -57,7 +57,7 @@ public class GUIWindow extends JFrame {
 		//Title of Window
 		setTitle("Fit f\u00FCrs Laufen");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 697, 263);
+		setBounds(100, 100, 750, 263);
 		contentPane = new JPanel();
 		contentPane.setForeground(new Color(0, 0, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
