@@ -8,16 +8,15 @@ import com.itextpdf.text.Section;
 public class ErnaehrungTip {
 	
 	public void selectErnährung (String stand, Section doc) throws BadElementException{
-		switch (stand){
-		case "untrainiert": 
+		if (stand.equals("untrainiert")) {
 			TipUntrainiert(doc);
-			break;
-		case "grundausdauer": 
+
+		} else if (stand.equals("grundausdauer")) {
 			TipGrundausdauer(doc);
-			break;
-		case "gut trainiert": 
+
+		} else if (stand.equals("gut trainiert")) {
 			TipGuteAusdauer(doc);
-			break;			
+
 		}
 	}
 	

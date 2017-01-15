@@ -136,9 +136,8 @@ public class GUIWindow extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
 				Stand = combofit.getSelectedItem().toString();				
-			}			
+			}
 		});
 		
 		//label of Dropbox (Zeit)
@@ -161,19 +160,18 @@ public class GUIWindow extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				switch (combStrecke.getSelectedItem().toString()){
-				case "5": 
+				String s = combStrecke.getSelectedItem().toString();
+				if (s.equals("5")) {
 					comboZeit.setModel(Zeit5);
-					break;
-				case "10": 
+
+				} else if (s.equals("10")) {
 					comboZeit.setModel(Zeit10);
-					break;
-				//case "15": 
+
+					//case "15":
 					//comboZeit.setModel(Zeit15);
 					//break;
-				//case "20": 
+					//case "20":
 					//comboZeit.setModel(Zeit20);
-				
 				}
 				Strecke = combStrecke.getSelectedItem().toString(); 
 			}
@@ -228,8 +226,8 @@ public class GUIWindow extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		
-		// Create PDF if Button "Trainingsplan erstellen" is pushed 
+
+		// Create PDF if Button "Trainingsplan erstellen" is pushed
 		btnTrainingsplan.addActionListener(new ActionListener() {
 			
 			@Override
@@ -244,7 +242,7 @@ public class GUIWindow extends JFrame {
 	                    // new object de.beuth.Ausgabe
 	                    Ausgabe Test = new Ausgabe();
 	                    // location of document 
-	                    String FILE = "C:/Users/Default/Documents/Fit_Fürs_Laufen.pdf";
+	                    String FILE = "C:/Users/Default/Documents/Fit_Fuers_Laufen.pdf";
 	                    PdfWriter.getInstance(document, new FileOutputStream(FILE));
 	                    // create de.beuth.Ausgabe with methods
 	                    document.open();

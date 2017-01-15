@@ -11,38 +11,36 @@ public class TrainingDauer {
 	public int dauerUntrainirt (String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
-			switch (Zeit){
-				case "35":
-					Einheiten = 23;
-					break;
-				case "30": 
-					Einheiten = 23 + 19;
-					break;
-				case "25":	
-					Einheiten = 23 + 19;
-					break;
-				case "20":
-					Einheiten = 23 + 19 + 32;
-					break;
+			if (Zeit.equals("35")) {
+				Einheiten = 23;
+
+			} else if (Zeit.equals("30")) {
+				Einheiten = 23 + 19;
+
+			} else if (Zeit.equals("25")) {
+				Einheiten = 23 + 19;
+
+			} else if (Zeit.equals("20")) {
+				Einheiten = 23 + 19 + 32;
+
 			}
 		}
 		if (strecke == "10"){
-			switch(Zeit){
-				case "60": 
-					Einheiten = 31;
-					break;					
-				case "55":
-					Einheiten = 35;
-					break;
-				case "50":
-					Einheiten = 31 + 39;
-					break;
-				case "45":
-					Einheiten = 35 + 41;
-					break;
-				case "40":
-					Einheiten = 31 + 39 + 52;
-					break;	
+			if (Zeit.equals("60")) {
+				Einheiten = 31;
+
+			} else if (Zeit.equals("55")) {
+				Einheiten = 35;
+
+			} else if (Zeit.equals("50")) {
+				Einheiten = 31 + 39;
+
+			} else if (Zeit.equals("45")) {
+				Einheiten = 35 + 41;
+
+			} else if (Zeit.equals("40")) {
+				Einheiten = 31 + 39 + 52;
+
 			}
 		}
 		return Einheiten;
@@ -51,32 +49,30 @@ public class TrainingDauer {
 	public int dauerGrundausdauer(String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
-			switch(Zeit){
-			case "30":
+			if (Zeit.equals("30")) {
 				Einheiten = 19;
-				break;
-			case "25":
+
+			} else if (Zeit.equals("25")) {
 				Einheiten = 19;
-				break;
-			case "20":
+
+			} else if (Zeit.equals("20")) {
 				Einheiten = 19 + 32;
-				break;			
+
 			}
 		}
 		if (strecke == "10"){
-			switch(Zeit){
-			case "55":
+			if (Zeit.equals("55")) {
 				Einheiten = 35;
-				break;
-			case "50":
+
+			} else if (Zeit.equals("50")) {
 				Einheiten = 39;
-				break; 
-			case "45":
+
+			} else if (Zeit.equals("45")) {
 				Einheiten = 41;
-				break;
-			case "40":
+
+			} else if (Zeit.equals("40")) {
 				Einheiten = 39 + 52;
-				break;				
+
 			}
 		}
 		return Einheiten; 
@@ -85,21 +81,19 @@ public class TrainingDauer {
 	public int dauerGuteAausdauer(String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
-			switch(Zeit){
-			case "25":
+			if (Zeit.equals("25")) {
 				Einheiten = 19;
-				break;
-			case "20":
+
+			} else if (Zeit.equals("20")) {
 				Einheiten = 32;
-				break;		
+
 			}
 		}
 		if (strecke == "10"){
-			switch(Zeit){
-			case "45":
+			if (Zeit.equals("45")) {
 				Einheiten = 41;
-				break; 
-			case "40":
+
+			} else if (Zeit.equals("40")) {
 				Einheiten = 52;
 			}
 		}
