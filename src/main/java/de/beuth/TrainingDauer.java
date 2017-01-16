@@ -3,11 +3,27 @@ package de.beuth;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Section;
 
+/**
+ * The type Training dauer.
+ */
 public class TrainingDauer {
-	
+
+	/**
+	 * The Par.
+	 */
 	Paragraph par = new Paragraph();
+	/**
+	 * The Wochen.
+	 */
 	int Wochen = 0;
-	
+
+	/**
+	 * Dauer untrainirt int.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @return the int
+	 */
 	public int dauerUntrainirt (String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
@@ -45,7 +61,14 @@ public class TrainingDauer {
 		}
 		return Einheiten;
 	}
-	
+
+	/**
+	 * Dauer grundausdauer int.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @return the int
+	 */
 	public int dauerGrundausdauer(String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
@@ -77,7 +100,14 @@ public class TrainingDauer {
 		}
 		return Einheiten; 
 	}
-	
+
+	/**
+	 * Dauer gute aausdauer int.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @return the int
+	 */
 	public int dauerGuteAausdauer(String strecke, String Zeit){
 		int Einheiten = 0;
 		if (strecke == "5"){
@@ -99,7 +129,14 @@ public class TrainingDauer {
 		}
 		return Einheiten;
 	}
-	
+
+	/**
+	 * Print dauer.
+	 *
+	 * @param aufwand   the aufwand
+	 * @param Einheiten the einheiten
+	 * @param subPart   the sub part
+	 */
 	public void printDauer(String aufwand, int Einheiten, Section subPart){
 		if (Einheiten != 0){
 			Wochen = (Einheiten / Integer.parseInt(aufwand))+1;

@@ -9,9 +9,18 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 
 
+/**
+ * The type Trainings einheiten.
+ */
 public class TrainingsEinheiten {
 
-public void createTable5km35min(Section subPart) throws BadElementException{
+    /**
+     * Create table 5 km 35 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable5km35min(Section subPart) throws BadElementException{
     	
     	PdfPTable table = new PdfPTable(2);    	    	
         PdfPCell c1 = new PdfPCell(new Phrase("Trainingseinheit"));
@@ -74,7 +83,14 @@ public void createTable5km35min(Section subPart) throws BadElementException{
         table.addCell("Wettkampf 5-km-Renntempo 5-km-Lauf");
         subPart.add(table);
     }
-public void createTable5km30min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 5 km 30 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable5km30min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -131,7 +147,14 @@ public void createTable5km30min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf: Einlaufen Zeit: 10 min, Wettkampf Dist: 5 km, Auslaufen Zeit: 5 min");    
     subPart.add(table);
 	}
-public void createTable5km25min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 5 km 25 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable5km25min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -188,7 +211,14 @@ public void createTable5km25min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 10 min, Wettkampf Dist: 5 km, Auslaufen Zeit: 10 min");    
     subPart.add(table);
 	}
-public void createTable5km20min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 5 km 20 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable5km20min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -271,7 +301,14 @@ public void createTable5km20min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 10 min, Wettkampf Dist: 5 km, Auslaufen Zeit: 10 min");
     subPart.add(table);
 	}
-public void createTable10km60min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 10 km 60 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable10km60min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -352,7 +389,14 @@ public void createTable10km60min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 15 min, Wettkampf Dist: 10 km, Auslaufen Zeit: 15 min");
     subPart.add(table);
 	}
-public void createTable10km55min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 10 km 55 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable10km55min(Section subPart) throws BadElementException{
 
 	
 	PdfPTable table = new PdfPTable(2);
@@ -442,7 +486,14 @@ public void createTable10km55min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 15 min, Wettkampf Dist: 10 km, Auslaufen Zeit: 10 min");
     subPart.add(table);
 	}
-public void createTable10km50min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 10 km 50 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable10km50min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -539,7 +590,14 @@ public void createTable10km50min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 15 min, Wettkampf Dist: 10 km, Auslaufen Zeit: 15 min");
     subPart.add(table);
 	}
-public void createTable10km45min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 10 km 45 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable10km45min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -648,7 +706,14 @@ public void createTable10km45min(Section subPart) throws BadElementException{
     table.addCell("Wettkampf Einlaufen Zeit: 15 min, Wettkampf Dist: 10 km, Auslaufen Zeit: 15 min");
     subPart.add(table);
 	}
-public void createTable10km40min(Section subPart) throws BadElementException{
+
+    /**
+     * Create table 10 km 40 min.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void createTable10km40min(Section subPart) throws BadElementException{
 	
 	PdfPTable table = new PdfPTable(2);
 
@@ -772,7 +837,13 @@ public void createTable10km40min(Section subPart) throws BadElementException{
     subPart.add(table);
 	}
 
-	public void defaultStatment(Section subPart) throws BadElementException{
+    /**
+     * Default statment.
+     *
+     * @param subPart the sub part
+     * @throws BadElementException the bad element exception
+     */
+    public void defaultStatment(Section subPart) throws BadElementException{
 		Paragraph Text = new Paragraph("Mit dem angegebenen Trainingsstand, "
 				+ "ware dieses Zeihl bereits zu erreichen."
 				+"\n"+ "Um einen Trainingsplan für dieses Ziehl zu erstellen, "

@@ -25,16 +25,21 @@ import com.itextpdf.text.Document;
 import com.itextpdf.text.PageSize;
 import com.itextpdf.text.pdf.PdfWriter;
 
+/**
+ * The type Gui window.
+ */
 public class GUIWindow extends JFrame {
 
 	private JPanel contentPane;
 	private String Strecke = ""; 
 	private String Zeit = ""; 
 	private String Aufwand = ""; 
-	private String Stand = ""; 
+	private String Stand = "";
 
 	/**
 	 * Launch the application.
+	 *
+	 * @param args the input arguments
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {

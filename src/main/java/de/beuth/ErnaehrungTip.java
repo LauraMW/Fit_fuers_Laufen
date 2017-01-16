@@ -5,8 +5,18 @@ import com.itextpdf.text.ListItem;
 import com.itextpdf.text.RomanList;
 import com.itextpdf.text.Section;
 
+/**
+ * The type Ernaehrung tip.
+ */
 public class ErnaehrungTip {
-	
+
+	/**
+	 * Select ernährung.
+	 *
+	 * @param stand the stand
+	 * @param doc   the doc
+	 * @throws BadElementException the bad element exception
+	 */
 	public void selectErnährung (String stand, Section doc) throws BadElementException{
 		if (stand.equals("untrainiert")) {
 			TipUntrainiert(doc);
@@ -19,7 +29,13 @@ public class ErnaehrungTip {
 
 		}
 	}
-	
+
+	/**
+	 * Tip untrainiert.
+	 *
+	 * @param subPart the sub part
+	 * @throws BadElementException the bad element exception
+	 */
 	public void TipUntrainiert(Section subPart) throws BadElementException{
 	
 	RomanList List = new RomanList();
@@ -34,6 +50,12 @@ public class ErnaehrungTip {
 	subPart.add(List);
 	}
 
+	/**
+	 * Tip grundausdauer.
+	 *
+	 * @param subPart the sub part
+	 * @throws BadElementException the bad element exception
+	 */
 	public void TipGrundausdauer(Section subPart) throws BadElementException{
 	
 	RomanList List = new RomanList();
@@ -51,6 +73,12 @@ public class ErnaehrungTip {
 	subPart.add(List);
 	}
 
+	/**
+	 * Tip gute ausdauer.
+	 *
+	 * @param subPart the sub part
+	 * @throws BadElementException the bad element exception
+	 */
 	public void TipGuteAusdauer(Section subPart) throws BadElementException{
 	
 	RomanList List = new RomanList();

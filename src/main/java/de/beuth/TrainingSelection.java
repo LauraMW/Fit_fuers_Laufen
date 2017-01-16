@@ -4,12 +4,26 @@ import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Section;
 
+/**
+ * The type Training selection.
+ */
 public class TrainingSelection {
 	private TrainingsEinheiten Plan = new TrainingsEinheiten();
 	private Paragraph par = new Paragraph();
 	private TrainingDauer Einheiten = new TrainingDauer();
 	private int gesamteinheiten = 0;
-	
+
+	/**
+	 * Select training boolean.
+	 *
+	 * @param strecke the strecke
+	 * @param zeit    the zeit
+	 * @param stand   the stand
+	 * @param aufwand the aufwand
+	 * @param doc     the doc
+	 * @return the boolean
+	 * @throws BadElementException the bad element exception
+	 */
 	public boolean selectTraining (String strecke, String zeit, String stand, String aufwand, Section doc) throws BadElementException{
 		if (stand.equals("untrainiert")) {
 			gesamteinheiten = Einheiten.dauerUntrainirt(strecke, zeit);
@@ -35,7 +49,15 @@ public class TrainingSelection {
 		
 		
 	}
-	
+
+	/**
+	 * Selection untrainirt.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @param doc     the doc
+	 * @throws BadElementException the bad element exception
+	 */
 	public void selectionUntrainirt (String strecke, String Zeit, Section doc) throws BadElementException{
 		if (strecke == "5"){
 			if (Zeit.equals("35")) {
@@ -165,7 +187,15 @@ public class TrainingSelection {
 			}
 		}
 	}
-	
+
+	/**
+	 * Selection grundausdauer.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @param doc     the doc
+	 * @throws BadElementException the bad element exception
+	 */
 	public void selectionGrundausdauer(String strecke, String Zeit, Section doc) throws BadElementException{
 		if (strecke == "5"){
 			if (Zeit.equals("30")) {
@@ -245,7 +275,15 @@ public class TrainingSelection {
 			}
 		}
 	}
-	
+
+	/**
+	 * Selection gute aausdauer.
+	 *
+	 * @param strecke the strecke
+	 * @param Zeit    the zeit
+	 * @param doc     the doc
+	 * @throws BadElementException the bad element exception
+	 */
 	public void selectionGuteAausdauer(String strecke, String Zeit, Section doc) throws BadElementException{
 		if (strecke == "5"){
 			if (Zeit.equals("25")) {
@@ -293,7 +331,13 @@ public class TrainingSelection {
 			}
 		}
 	}
-	
+
+	/**
+	 * Add empty line.
+	 *
+	 * @param paragraph the paragraph
+	 * @param number    the number
+	 */
 	public void addEmptyLine(Paragraph paragraph, int number) {
         for (int i = 0; i < number; i++) {
                 paragraph.add(new Paragraph(" "));
